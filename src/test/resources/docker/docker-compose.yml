@@ -1,0 +1,16 @@
+version: '3'
+services:
+
+  hbase:
+    build:
+      context: ./dockerfiles
+      dockerfile: HBase
+    container_name: hbase
+    hostname: hbase
+    ports:
+      - "2181:2181"
+      - "16000:16000"
+      - "16010:16010"
+      - "16020:16020"
+      - "16030:16030"
+    network_mode: "host"

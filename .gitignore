@@ -1,0 +1,8 @@
+# project
+target/
+metastore_db/
+
+# IntelliJ
+*.iml
+.idea/
+derby.log
